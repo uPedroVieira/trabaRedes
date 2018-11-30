@@ -69,11 +69,11 @@
             user_name : user_name,
             message : user_input
           } )
-          // empty the input field
+        
           $( 'input.message' ).val( '' ).focus()
         } )
       } )
-      // capture message
+   
       socket.on( 'my response', function( msg ) {
         console.log( msg )
         if( typeof msg.user_name !== 'undefined' ) {
